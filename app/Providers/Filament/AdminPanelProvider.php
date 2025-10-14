@@ -60,7 +60,6 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->cacheDisk('local')
             ->unsavedChangesAlerts(false);
     }
 }
